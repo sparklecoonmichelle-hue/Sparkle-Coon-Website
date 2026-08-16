@@ -1090,7 +1090,7 @@ nav a:hover{
     .hero-image {
         width: 100%;
         height: auto;
-        display: cover;
+        display: block;
     }
 
     .hero-overlay {
