@@ -1,0 +1,1249 @@
+
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   BODY
+========================= */
+
+body {
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: #fff8e8;
+
+    color: #5f3323;
+
+}
+
+.space{
+    background: #ffdda1;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.site-header {
+
+    height: 90px;
+
+    background: #fff8e8;
+
+    display: flex;
+
+    justify-content: flex-end;
+
+    align-items: center;
+
+    padding: 0 7%;
+
+    position: relative;
+
+    box-shadow:
+        0 2px 10px rgba(0, 0, 0, 0.10);
+
+    z-index: 10;
+
+}
+
+
+/* Logo */
+
+.site-logo {
+
+    position: absolute;
+
+    left: 2%;
+
+    top: 20px;
+
+    width: 225px;
+
+    height: 225px;
+
+    object-fit: contain;
+
+    z-index: 20;
+
+}
+
+
+/* Navigation */
+
+.site-header nav {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 35px;
+
+}
+
+
+.site-header nav a {
+
+    text-decoration: none;
+
+    color: #522813;
+
+    font-size: 17px;
+
+    font-weight: bold;
+
+}
+
+
+.site-header nav a:hover {
+
+    color: #c59d5f;
+
+}
+
+
+/* =========================
+   PAGE INTRO
+========================= */
+
+.about-intro {
+    background:#f4c861;
+
+    text-align: center;
+
+    padding: 80px 20px 70px;
+
+}
+
+
+.about-intro h1 {
+
+    font-family: Georgia, serif;
+
+    font-size: 48px;
+
+    color: #522813;
+
+    margin-bottom: 18px;
+
+}
+
+
+.about-intro h1::after {
+
+    content: "";
+
+    display: block;
+
+    width: 90px;
+
+    height: 2px;
+
+    background: #d6a532;
+
+    margin: 18px auto 0;
+
+}
+
+
+.about-intro p {
+
+    font-size: 18px;
+
+    line-height: 1.7;
+
+    color: #5f3323;
+
+    max-width: 700px;
+
+    margin: 20px auto 0;
+
+}
+
+
+/* =========================
+   MAIN ABOUT BACKGROUND
+========================= */
+
+.about-page {
+
+    background: linear-gradient(
+        to bottom,
+        #fff8e8 0%,
+        #dfe0bd 35%,
+        #b9bd91 65%,
+        #d8c47d 85%,
+        #fff8e8 100%
+    );
+
+}
+
+
+/* =========================
+   ABOUT SECTIONS
+========================= */
+
+.about-section {
+
+    width: 100%;
+
+    max-width: 1350px;
+
+    margin: 0 auto;
+
+    padding: 90px 5%;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 80px;
+
+    align-items: center;
+
+}
+
+
+/* =========================
+   REVERSE SECTION
+========================= */
+
+.about-section.reverse .about-image {
+
+    order: 2;
+
+}
+
+
+.about-section.reverse .about-information {
+
+    order: 1;
+
+}
+
+
+/* =========================
+   ABOUT IMAGE
+========================= */
+
+.about-image {
+
+    width: 100%;
+
+    height: 550px;
+
+    overflow: hidden;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 8px 25px rgba(70, 45, 25, 0.18);
+
+}
+
+
+.about-image img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+}
+
+
+/* =========================
+   INFORMATION
+========================= */
+
+.about-information {
+
+    max-width: 550px;
+
+}
+
+
+.about-label {
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    color: #c99a35;
+
+    margin-bottom: 10px;
+
+}
+
+
+.about-information h2 {
+
+    font-family: Georgia, serif;
+
+    font-size: 46px;
+
+    color: #522813;
+
+    margin-bottom: 10px;
+
+}
+
+
+.about-information h3 {
+
+    font-size: 20px;
+
+    font-weight: normal;
+
+    color: #8a6949;
+
+    margin-bottom: 25px;
+
+}
+
+
+.about-information p {
+
+    font-size: 17px;
+
+    line-height: 1.8;
+
+    color: #5f3323;
+
+    margin-bottom: 20px;
+
+}
+
+
+/* =========================
+   FAMILY EFFORT
+========================= */
+
+.family-effort {
+
+    max-width: 900px;
+
+    margin: 0 auto;
+
+    padding: 80px 7%;
+
+    text-align: center;
+
+}
+
+
+.family-effort h2 {
+
+    font-family: Georgia, serif;
+
+    font-size: 42px;
+
+    color: #522813;
+
+    margin-bottom: 25px;
+
+}
+
+
+.family-effort p:not(.about-label) {
+
+    font-size: 17px;
+
+    line-height: 1.8;
+
+    color: #5f3323;
+
+    margin-bottom: 20px;
+
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.about-footer {
+
+    text-align: center;
+
+    padding: 70px 20px;
+
+    background: #f4c861;
+
+}
+
+
+.cat-button {
+
+    display: inline-block;
+
+    padding: 13px 28px;
+
+    background: #c99a35;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 25px;
+
+    font-weight: bold;
+
+    transition:
+        background 0.3s ease,
+        transform 0.2s ease;
+
+}
+
+
+.cat-button:hover {
+
+    background: #a97922;
+
+    transform: translateY(-2px);
+
+}
+
+
+/* =========================
+   MORE ABOUT OUR CATTERY
+========================= */
+
+.cattery-section {
+
+    width: 100%;
+
+    padding: 90px 7%;
+
+    text-align: center;
+
+    background: rgba(255, 248, 232, 0.65);
+
+}
+
+
+.cattery-section h2 {
+
+    font-family: Georgia, serif;
+
+    font-size: 42px;
+
+    color: #522813;
+
+    margin-bottom: 35px;
+
+}
+
+
+.cattery-text {
+
+    max-width: 900px;
+
+    margin: 0 auto;
+
+}
+
+
+.cattery-text p {
+
+    font-size: 17px;
+
+    line-height: 1.8;
+
+    color: #5f3323;
+
+    margin-bottom: 22px;
+
+}
+
+
+@media (max-width: 650px) {
+
+    .cattery-section {
+
+        padding: 60px 7%;
+
+    }
+
+
+    .cattery-section h2 {
+
+        font-size: 34px;
+
+    }
+
+
+    .cattery-text p {
+
+        font-size: 16px;
+
+    }
+
+}
+
+
+/* =========================
+   HISTORY SECTION
+========================= */
+
+.history-section {
+
+    width: 100%;
+
+    padding: 90px 7%;
+
+    text-align: center;
+
+}
+
+
+.history-section h2 {
+
+    font-family: Georgia, serif;
+
+    font-size: 42px;
+
+    color: #522813;
+
+    margin-bottom: 35px;
+
+}
+
+
+.history-text {
+
+    max-width: 900px;
+
+    margin: 0 auto;
+
+}
+
+
+.history-text p {
+
+    font-size: 17px;
+
+    line-height: 1.8;
+
+    color: #5f3323;
+
+    margin-bottom: 22px;
+
+}
+
+
+.history-text strong {
+
+    color: #522813;
+
+}
+
+
+@media (max-width: 650px) {
+
+    .history-section {
+
+        padding: 60px 7%;
+
+    }
+
+
+    .history-section h2 {
+
+        font-size: 34px;
+
+    }
+
+
+    .history-text p {
+
+        font-size: 16px;
+
+    }
+
+}
+
+
+/* =========================
+   HISTORY FEATURE
+========================= */
+
+.history-feature {
+
+    width: 100%;
+
+    max-width: 1400px;
+
+    margin: 0 auto;
+
+    padding: 90px 6%;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 80px;
+
+    align-items: center;
+
+}
+
+
+/* =========================
+   HISTORY IMAGE
+========================= */
+
+.history-image {
+
+    width: 100%;
+
+    overflow: hidden;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 8px 25px rgba(70, 45, 25, 0.18);
+
+}
+
+
+.history-image img {
+
+    width: 100%;
+
+    display: block;
+
+    height: auto;
+
+}
+
+
+/* =========================
+   HISTORY TEXT
+========================= */
+
+.history-feature-text {
+
+    max-width: 600px;
+
+}
+
+
+.history-feature-text h2 {
+
+    font-family: Georgia, serif;
+
+    font-size: 48px;
+
+    color: #522813;
+
+    margin-bottom: 25px;
+
+}
+
+
+.history-feature-text > p:not(.about-label) {
+
+    font-size: 17px;
+
+    line-height: 1.8;
+
+    color: #5f3323;
+
+    margin-bottom: 22px;
+
+}
+
+
+.history-feature-text strong {
+
+    color: #522813;
+
+}
+
+
+/* =========================
+   HISTORICAL CATS
+========================= */
+
+.history-cats {
+
+    margin-top: 30px;
+
+    padding-top: 25px;
+
+    border-top: 1px solid rgba(82, 40, 19, 0.25);
+
+}
+
+
+.history-cats p {
+
+    font-size: 16px;
+
+    line-height: 1.6;
+
+    color: #5f3323;
+
+    margin-bottom: 18px;
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 900px) {
+
+    .history-feature {
+
+        grid-template-columns: 1fr;
+
+        gap: 45px;
+
+        padding: 70px 7%;
+
+    }
+
+
+    .history-feature-text {
+
+        max-width: none;
+
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    .history-feature {
+
+        padding: 60px 7%;
+
+    }
+
+
+    .history-feature-text h2 {
+
+        font-size: 38px;
+
+    }
+
+
+    .history-feature-text > p:not(.about-label) {
+
+        font-size: 16px;
+
+    }
+
+}
+
+
+/* =========================
+   GROWING THROUGH THE YEARS
+========================= */
+
+.growing-section {
+
+    width: 100%;
+
+    padding: 90px 7%;
+
+    text-align: center;
+
+}
+
+
+.growing-section h2 {
+
+    font-family: Georgia, serif;
+
+    font-size: 42px;
+
+    color: #522813;
+
+    margin-bottom: 35px;
+
+}
+
+
+.growing-text {
+
+    max-width: 900px;
+
+    margin: 0 auto;
+
+}
+
+
+.growing-text p {
+
+    font-size: 17px;
+
+    line-height: 1.8;
+
+    color: #5f3323;
+
+    margin-bottom: 22px;
+
+}
+
+
+@media (max-width: 650px) {
+
+    .growing-section {
+
+        padding: 60px 7%;
+
+    }
+
+
+    .growing-section h2 {
+
+        font-size: 34px;
+
+    }
+
+
+    .growing-text p {
+
+        font-size: 16px;
+
+    }
+
+}
+
+
+/* =========================
+   SPARKLE COON TODAY
+========================= */
+
+.today-section {
+
+    width: 100%;
+
+    padding: 100px 7%;
+
+    text-align: center;
+
+    background: #522813;
+
+}
+
+
+.today-section h2 {
+
+    font-family: Georgia, serif;
+
+    font-size: 44px;
+
+    color: #f4c861;
+
+    margin-bottom: 35px;
+
+}
+
+
+.today-text {
+
+    max-width: 900px;
+
+    margin: 0 auto;
+
+}
+
+
+.today-text p {
+
+    font-size: 17px;
+
+    line-height: 1.8;
+
+    color: #e6ca8a;
+
+    margin-bottom: 22px;
+
+}
+
+
+@media (max-width: 650px) {
+
+    .today-section {
+
+        padding: 70px 7%;
+
+    }
+
+
+    .today-section h2 {
+
+        font-size: 36px;
+
+    }
+
+
+    .today-text p {
+
+        font-size: 16px;
+
+    }
+
+}
+
+
+/* =========================
+   EARLY SPAY & NEUTER
+========================= */
+
+.esn-section {
+
+    width: 100%;
+
+    padding: 100px 7%;
+
+    text-align: center;
+
+    background: #522813;
+
+}
+
+
+.esn-section h2 {
+
+    font-family: Georgia, serif;
+
+    font-size: 44px;
+
+    color: #f4c861;
+
+    margin-bottom: 40px;
+
+}
+
+
+.esn-text {
+
+    max-width: 900px;
+
+    margin: 0 auto;
+
+}
+
+
+.esn-text p {
+
+    font-size: 17px;
+
+    line-height: 1.8;
+
+    color: #e6ca8a;
+
+    margin-bottom: 22px;
+
+}
+
+
+.esn-requirements {
+
+    max-width: 800px;
+
+    margin: 45px auto 0;
+
+    padding-top: 35px;
+
+    border-top: 1px solid rgba(230, 202, 138, 0.35);
+
+}
+
+
+.esn-requirements h3 {
+
+    font-family: Georgia, serif;
+
+    font-size: 28px;
+
+    color: #f4c861;
+
+    margin-bottom: 25px;
+
+}
+
+
+.esn-requirements p {
+
+    font-size: 16px;
+
+    line-height: 1.7;
+
+    color: #e6ca8a;
+
+    margin-bottom: 12px;
+
+}
+
+
+.esn-requirements strong {
+
+    color: #f4c861;
+
+}
+
+
+@media (max-width: 650px) {
+
+    .esn-section {
+
+        padding: 70px 7%;
+
+    }
+
+
+    .esn-section h2 {
+
+        font-size: 36px;
+
+    }
+
+
+    .esn-text p {
+
+        font-size: 16px;
+
+    }
+
+
+    .esn-requirements h3 {
+
+        font-size: 25px;
+
+    }
+
+}
+
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+    .site-logo {
+
+        width: 180px;
+
+        height: 180px;
+
+    }
+
+
+    .about-section {
+
+        grid-template-columns: 1fr;
+
+        gap: 40px;
+
+        padding: 70px 7%;
+
+    }
+
+
+    .about-section.reverse .about-image {
+
+        order: 1;
+
+    }
+
+
+    .about-section.reverse .about-information {
+
+        order: 2;
+
+    }
+
+
+    .about-information {
+
+        max-width: none;
+
+    }
+
+
+    .about-image {
+
+        height: 500px;
+
+    }
+
+}
+
+
+/* =========================
+   PHONE
+========================= */
+
+@media (max-width: 650px) {
+
+    .site-header {
+
+        height: 75px;
+
+        padding-right: 5%;
+
+    }
+
+
+    .site-logo {
+
+        width: 130px;
+
+        height: 130px;
+
+        top: 15px;
+
+        left: 2%;
+
+    }
+
+
+    .site-header nav {
+
+        gap: 15px;
+
+    }
+
+
+    .site-header nav a {
+
+        font-size: 14px;
+
+    }
+
+
+    .about-intro {
+
+        padding: 60px 20px;
+
+    }
+
+
+    .about-intro h1 {
+
+        font-size: 38px;
+
+    }
+
+
+    .about-intro p {
+
+        font-size: 16px;
+
+    }
+
+
+    .about-section {
+
+        padding: 60px 7%;
+
+        gap: 35px;
+
+    }
+
+
+    .about-image {
+
+        height: 420px;
+
+        border-radius: 15px;
+
+    }
+
+
+    .about-information h2 {
+
+        font-size: 38px;
+
+    }
+
+
+    .about-information h3 {
+
+        font-size: 18px;
+
+    }
+
+
+    .about-information p {
+
+        font-size: 16px;
+
+    }
+
+
+    .family-effort {
+
+        padding: 60px 7%;
+
+    }
+
+
+    .family-effort h2 {
+
+        font-size: 34px;
+
+    }
+
+}
+
+
+.moreinfo {
+
+    background: #fff8e8;
+
+    padding: 50px;
+
+    text-align: center;
+}
+
+
+.moreinfo a {
+
+    color: #522813;
+
+    font-weight: bold;
+
+    text-decoration: none;
+
+    margin: 0 15px;
+}
+
+
+.moreinfo a:hover {
+
+    color: #c59d5f;
+}
+
+
+.moreinfo p {
+
+    margin-top: 25px;
+
+    font-size: 14px;
+
+    color: #6d6258;
+}

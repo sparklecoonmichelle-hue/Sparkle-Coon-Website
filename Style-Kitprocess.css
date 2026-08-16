@@ -1,0 +1,983 @@
+/* ==============================
+   RESET
+================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ==============================
+   BODY
+================================= */
+
+body {
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: #ffdda1;
+
+    color: #5f3323;
+
+    text-align: left;
+}
+
+
+p {
+
+    font-size: 16px;
+
+    line-height: 1.7;
+}
+
+
+h1,
+h2,
+h3 {
+
+    font-family: Georgia, serif;
+
+}
+
+
+/* ==============================
+   HEADER
+================================= */
+
+.site-header {
+
+    height: 90px;
+
+    background: #fff8e8;
+
+    display: flex;
+
+    justify-content: flex-end;
+
+    align-items: center;
+
+    padding: 0 7%;
+
+    position: relative;
+
+    box-shadow:
+        0 2px 10px rgba(0, 0, 0, 0.10);
+
+    z-index: 10;
+}
+
+
+.site-logo {
+
+    position: absolute;
+
+    left: 2%;
+
+    top: 20px;
+
+    width: 225px;
+
+    height: 225px;
+
+    object-fit: contain;
+
+    z-index: 20;
+}
+
+
+/* ==============================
+   NAVIGATION
+================================= */
+
+.site-header nav {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 35px;
+}
+
+
+.site-header nav a {
+
+    text-decoration: none;
+
+    color: #522813;
+
+    font-size: 17px;
+
+    font-weight: bold;
+}
+
+
+.site-header nav a:hover {
+
+    color: #c59d5f;
+}
+
+
+/* ==============================
+   PAGE HERO
+================================= */
+
+.page-hero {
+
+    width: 90%;
+
+    max-width: 1400px;
+
+    min-height: 320px;
+
+    margin: 0 auto;
+
+    background: #5a351f;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+.page-hero-content {
+
+    width: 90%;
+
+    max-width: 600px;
+
+    padding: 50px 40px;
+
+    text-align: center;
+
+    color: #fff8e8;
+}
+
+
+.page-hero h1 {
+
+    font-size: 48px;
+
+    line-height: 1.1;
+
+    color: #f8c75a;
+
+    margin-bottom: 20px;
+}
+
+
+.hero-line {
+
+    width: 180px;
+
+    height: 2px;
+
+    background: #f8c75a;
+
+    margin: 15px auto 20px;
+}
+
+
+/* ==============================
+   APPLICATION SECTION
+================================= */
+
+.application-section {
+
+    background: #ffdda1;
+
+    padding: 80px 7%;
+}
+
+
+.application-content {
+
+    max-width: 1300px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 60px;
+
+    align-items: center;
+}
+
+
+/* ==============================
+   APPLICATION IMAGE
+================================= */
+
+.application-image {
+
+    position: relative;
+
+    width: 100%;
+
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 8px 25px rgba(70, 45, 25, 0.20);
+}
+
+
+.application-image img {
+
+    width: 100%;
+
+    height: 600px;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+.application-photo-notice {
+
+    position: absolute;
+
+    bottom: 18px;
+
+    left: 18px;
+
+    right: 18px;
+
+    background:
+        rgba(45, 25, 15, 0.85);
+
+    color: #fff8e8;
+
+    padding: 12px 15px;
+
+    text-align: center;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 0.5px;
+
+    border-radius: 8px;
+}
+
+
+/* ==============================
+   APPLICATION INFORMATION
+================================= */
+
+.application-info {
+
+    padding: 20px 0;
+}
+
+
+.application-info h2 {
+
+    font-size: 42px;
+
+    color: #522813;
+
+    margin-bottom: 15px;
+}
+
+
+.application-info p {
+
+    margin-bottom: 18px;
+}
+
+
+.application-status {
+
+    display: inline-block;
+
+    background: #f7d38a;
+
+    padding: 10px 18px;
+
+    border-radius: 10px;
+
+    font-weight: bold;
+
+    color: #522813;
+}
+
+
+.application-announcement {
+
+    background: #fff8e8;
+
+    border-left: 5px solid #c99a35;
+
+    padding: 20px 25px;
+
+    margin-top: 25px;
+
+    border-radius: 8px;
+}
+
+
+.application-announcement h3 {
+
+    font-size: 21px;
+
+    color: #522813;
+
+    margin-bottom: 10px;
+}
+
+
+.application-announcement ul {
+
+    padding-left: 22px;
+}
+
+
+.application-announcement li {
+
+    margin-bottom: 8px;
+
+    line-height: 1.5;
+}
+
+
+.last-updated {
+
+    font-size: 13px;
+
+    color: #6d6258;
+
+    margin-top: 25px;
+}
+
+
+/* ==============================
+   SECTION HEADINGS
+================================= */
+
+.section-heading {
+
+    max-width: 800px;
+
+    margin: 0 auto 45px;
+
+    text-align: center;
+}
+
+
+.section-heading h2 {
+
+    font-size: 42px;
+
+    color: #522813;
+
+    margin-bottom: 15px;
+}
+
+
+.section-heading h2::after {
+
+    content: "";
+
+    display: block;
+
+    width: 90px;
+
+    height: 2px;
+
+    background: #d6a532;
+
+    margin: 18px auto 0;
+}
+
+
+.section-heading p {
+
+    font-size: 18px;
+
+    color: #6d6258;
+}
+
+
+/* ==============================
+   IMPORTANT INFORMATION
+================================= */
+
+.important-information {
+    background: #fff8e8;
+    padding: 65px 7%;
+}
+
+.important-information-content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.important-information h2 {
+    font-family: Georgia, serif;
+    font-size: 38px;
+    color: #522813;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.important-information h2::after {
+    content: "";
+
+    display: block;
+
+    width: 90px;
+    height: 2px;
+
+    background: #d6a532;
+
+    margin: 18px auto 0;
+}
+
+
+/* ==============================
+   INFORMATION LIST
+================================= */
+
+.important-information ul {
+    max-width: 900px;
+
+    margin: 0 auto 30px;
+
+    padding-left: 25px;
+}
+
+.important-information li {
+    font-size: 17px;
+
+    line-height: 1.7;
+
+    color: #5f3323;
+
+    margin-bottom: 12px;
+}
+
+.important-information p {
+    max-width: 900px;
+
+    font-size: 19px;
+
+    margin: 0 auto 30px;
+
+    padding-left: 25px;
+}
+
+/* ==============================
+   PEDIGREE DROPDOWN
+================================= */
+
+.pedigree-dropdown {
+    max-width: 900px;
+
+    margin: 30px auto 0;
+
+    background: #f7d38a;
+
+    border-radius: 10px;
+
+    padding: 0;
+}
+
+.pedigree-dropdown summary {
+    padding: 18px 22px;
+
+    font-family: Georgia, serif;
+
+    font-size: 23px;
+
+    font-weight: bold;
+
+    color: #522813;
+
+    cursor: pointer;
+
+    list-style-position: inside;
+}
+
+.pedigree-dropdown summary:hover {
+    color: #8a5a18;
+}
+
+
+/* Pedigree text */
+
+.pedigree-content {
+    padding: 0 25px 22px;
+}
+
+.pedigree-content p {
+    font-size: 16px;
+
+    line-height: 1.7;
+
+    color: #5f3323;
+
+    margin-bottom: 15px;
+}
+
+.pedigree-content p:last-child {
+    margin-bottom: 0;
+}
+/* ==============================
+   DROPDOWNS
+================================= */
+
+.information-dropdown,
+.process-dropdown {
+
+    max-width: 1200px;
+
+    margin: 20px auto;
+
+    background: #f7d38a;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 4px 12px rgba(82, 40, 19, 0.08);
+}
+
+
+summary {
+
+    list-style: none;
+
+    cursor: pointer;
+
+    padding: 20px 25px;
+
+    font-family: Georgia, serif;
+
+    font-size: 21px;
+
+    font-weight: bold;
+
+    color: #522813;
+
+    position: relative;
+}
+
+
+summary::-webkit-details-marker {
+
+    display: none;
+}
+
+
+summary::after {
+
+    content: "+";
+
+    position: absolute;
+
+    right: 25px;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 25px;
+
+    color: #522813;
+}
+
+
+details[open] summary::after {
+
+    content: "−";
+}
+
+
+.dropdown-content {
+
+    padding: 5px 30px 30px;
+
+    color: #5f3323;
+}
+
+
+.dropdown-content p {
+
+    margin: 15px 0;
+}
+
+
+.dropdown-content h3 {
+
+    font-size: 21px;
+
+    color: #522813;
+
+    margin-top: 25px;
+
+    margin-bottom: 8px;
+}
+
+
+.dropdown-content ul,
+.dropdown-content ol {
+
+    padding-left: 25px;
+
+    margin: 15px 0;
+}
+
+
+.dropdown-content li {
+
+    margin-bottom: 12px;
+
+    line-height: 1.6;
+}
+
+
+/* ==============================
+   APPROVED APPLICATION
+================================= */
+
+.approved-section {
+
+    background: #ffdda1;
+
+    padding: 80px 7%;
+}
+
+
+.approved-content {
+
+    max-width: 1100px;
+
+    margin: 0 auto;
+}
+
+
+.approved-content h2 {
+
+    font-size: 38px;
+
+    color: #522813;
+
+    text-align: center;
+
+    margin-bottom: 35px;
+}
+
+
+.approved-content ul {
+
+    padding-left: 25px;
+
+    margin-bottom: 30px;
+}
+
+
+.approved-content li {
+
+    margin-bottom: 16px;
+
+    line-height: 1.7;
+
+    font-size: 16px;
+}
+
+
+.friendly-note {
+
+    background: #fff8e8;
+
+    border-left: 5px solid #c99a35;
+
+    padding: 20px 25px;
+
+    border-radius: 8px;
+
+    line-height: 1.7;
+}
+
+
+/* ==============================
+   DETAILED PROCESS
+================================= */
+
+.details-section {
+
+    background: #fff8e8;
+
+    padding: 80px 7%;
+}
+
+
+.process-dropdown {
+
+    background: #f7d38a;
+}
+
+
+/* ==============================
+   BOTTOM NAVIGATION
+================================= */
+
+.bottom-navigation {
+
+    background: #ffdda1;
+
+    padding: 60px 20px;
+
+    text-align: center;
+}
+
+
+.cat-button {
+
+    display: inline-block;
+
+    padding: 15px 35px;
+
+    background: #c99a35;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 10px;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    transition:
+        background 0.3s ease,
+        transform 0.2s ease;
+}
+
+
+.cat-button:hover {
+
+    background: #a97922;
+
+    transform: translateY(-2px);
+}
+
+
+/* ==============================
+   FOOTER
+================================= */
+
+.moreinfo {
+
+    background: #fff8e8;
+
+    padding: 50px;
+
+    text-align: center;
+}
+
+
+.moreinfo a {
+
+    color: #522813;
+
+    font-weight: bold;
+
+    text-decoration: none;
+
+    margin: 0 15px;
+}
+
+
+.moreinfo a:hover {
+
+    color: #c59d5f;
+}
+
+
+.moreinfo p {
+
+    margin-top: 25px;
+
+    font-size: 14px;
+
+    color: #6d6258;
+}
+
+
+/* ==============================
+   TABLET
+================================= */
+
+@media (max-width: 1000px) {
+
+    .application-content {
+
+        grid-template-columns: 1fr;
+
+        gap: 40px;
+    }
+
+
+    .application-image img {
+
+        height: 550px;
+    }
+
+
+    .important-content {
+
+        grid-template-columns:
+            1fr 1fr;
+    }
+
+}
+
+
+/* ==============================
+   PHONE
+================================= */
+
+@media (max-width: 700px) {
+
+    .site-header {
+
+        height: 75px;
+
+        padding: 0 20px;
+    }
+
+
+    .site-logo {
+
+        width: 150px;
+
+        height: 150px;
+
+        left: 5px;
+
+        top: 15px;
+    }
+
+
+    .site-header nav {
+
+        gap: 18px;
+    }
+
+
+    .site-header nav a {
+
+        font-size: 14px;
+    }
+
+
+    .page-hero {
+
+        width: 94%;
+
+        min-height: 240px;
+    }
+
+
+    .page-hero h1 {
+
+        font-size: 35px;
+    }
+
+
+    .application-section {
+
+        padding: 60px 20px;
+    }
+
+
+    .application-content {
+
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+    }
+
+
+    .application-image img {
+
+        height: 450px;
+    }
+
+
+    .application-info h2 {
+
+        font-size: 35px;
+    }
+
+
+    .important-section,
+    .approved-section,
+    .details-section {
+
+        padding: 60px 20px;
+    }
+
+
+    .important-content {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .section-heading h2 {
+
+        font-size: 35px;
+    }
+
+
+    .approved-content h2 {
+
+        font-size: 32px;
+    }
+
+
+    summary {
+
+        font-size: 18px;
+
+        padding: 18px 20px;
+
+        padding-right: 50px;
+    }
+
+
+    .dropdown-content {
+
+        padding: 5px 20px 25px;
+    }
+
+
+    .moreinfo {
+
+        padding: 40px 20px;
+    }
+
+
+    .moreinfo a {
+
+        display: block;
+
+        margin: 12px 0;
+    }
+
+}

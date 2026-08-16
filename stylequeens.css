@@ -1,0 +1,855 @@
+
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   MORE INFORMATION
+========================= */
+
+.moreinfo {
+
+    background: #fff8e8;
+
+    padding: 50px;
+
+    text-align: center;
+}
+
+
+.moreinfo a {
+
+    color: #522813;
+
+    font-weight: bold;
+
+    text-decoration: none;
+
+    margin: 0 15px;
+}
+
+
+.moreinfo a:hover {
+
+    color: #c59d5f;
+}
+
+
+.moreinfo p {
+
+    margin-top: 25px;
+
+    font-size: 14px;
+
+    color: #6d6258;
+}
+
+
+/* =========================
+   BODY
+========================= */
+
+body {
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: #ffdda1;
+
+    color: #5f3323;
+
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.site-header {
+
+    height: 90px;
+
+    background: #fff8e8;
+
+    display: flex;
+
+    justify-content: flex-end;
+
+    align-items: center;
+
+    padding: 0 7%;
+
+    position: relative;
+
+    box-shadow:
+        0 2px 10px rgba(0, 0, 0, 0.10);
+
+    z-index: 10;
+
+}
+
+
+/* Logo hanging over header */
+
+.site-logo {
+
+    position: absolute;
+
+    left: 2%;
+
+    top: 20px;
+
+    width: 225px;
+
+    height: 225px;
+
+    object-fit: contain;
+
+    z-index: 20;
+
+}
+
+
+/* Navigation */
+
+.site-header nav {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 35px;
+
+}
+
+
+.site-header nav a {
+
+    text-decoration: none;
+
+    color: #522813;
+
+    font-size: 17px;
+
+    font-weight: bold;
+
+}
+
+
+.site-header nav a:hover {
+
+    color: #c59d5f;
+
+}
+
+
+/* =========================
+   PAGE INTRO
+========================= */
+
+.queens-intro {
+
+    background: #522813;
+
+    text-align: center;
+
+    padding: 80px 20px 70px;
+
+}
+
+
+.queens-intro h1 {
+
+    font-family: Georgia, serif;
+
+    font-size: 48px;
+
+    color: #f4c861;
+
+    margin-bottom: 18px;
+
+}
+
+
+.queens-intro h1::after {
+
+    content: "";
+
+    display: block;
+
+    width: 90px;
+
+    height: 2px;
+
+    background: #d6a532;
+
+    margin: 18px auto 0;
+
+}
+
+
+.queens-intro p {
+
+    font-size: 18px;
+
+    line-height: 1.7;
+
+    color: #e6ca8a;
+
+    max-width: 700px;
+
+    margin: 20px auto 0;
+
+}
+
+
+/* =========================
+   QUEEN SECTION
+========================= */
+
+.queens-page {
+
+    background: linear-gradient(
+        to bottom,
+        #fff8e8 0%,
+        #dfe0bd 25%,
+        #b9bd91 55%,
+        #d8c47d 78%,
+        #fff8e8 100%
+    );
+
+}
+
+
+.queen-section {
+
+    width: 100%;
+
+    max-width: 1500px;
+
+    margin: 0 auto;
+
+    padding: 90px 3%;
+
+    display: grid;
+
+    grid-template-columns: 1.15fr 0.85fr;
+
+    gap: 80px;
+
+    align-items: center;
+
+}
+
+
+/* =========================
+   ALTERNATING QUEENS
+========================= */
+
+/*
+   Normal:
+
+   PHOTO | INFORMATION
+
+
+   Reverse:
+
+   INFORMATION | PHOTO
+*/
+
+
+.queen-section.reverse {
+
+    width: 100%;
+
+    max-width: 1500px;
+
+    margin: 0 auto;
+
+    padding-left: 3%;
+
+    padding-right: 3%;
+
+    background: transparent;
+
+}
+
+
+.queen-section.reverse .queen-images {
+
+    order: 2;
+
+}
+
+
+.queen-section.reverse .queen-information {
+
+    order: 1;
+
+}
+
+
+.queen-section.reverse .queen-images {
+
+    grid-column: 2;
+
+    grid-row: 1;
+
+}
+
+
+.queen-section.reverse .queen-information {
+
+    grid-column: 1;
+
+    grid-row: 1;
+
+}
+
+
+/* =========================
+   QUEEN IMAGES
+========================= */
+
+.queen-images {
+
+    width: 100%;
+
+}
+
+
+/* =========================
+   MAIN PHOTO
+========================= */
+
+.main-queen-image {
+
+    width: 100%;
+
+    height: 600px;
+
+    overflow: hidden;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 8px 25px rgba(70, 45, 25, 0.18);
+
+}
+
+
+.main-queen-image img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition: transform 0.4s ease;
+
+}
+
+
+.main-queen-image:hover img {
+
+    transform: scale(1.03);
+
+}
+
+
+/* =========================
+   SLIDESHOW
+========================= */
+
+.queen-slideshow {
+
+    position: relative;
+
+    width: 100%;
+
+    height: 600px;
+
+    overflow: hidden;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 8px 25px rgba(70, 45, 25, 0.18);
+
+}
+
+
+/* Images */
+
+.queen-slide {
+
+    position: absolute;
+
+    inset: 0;
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    display: none;
+
+}
+
+
+/* Only active image is visible */
+
+.queen-slide.active {
+
+    display: block;
+
+}
+
+
+/* =========================
+   SLIDE ARROWS
+========================= */
+
+.slide-arrow {
+
+    position: absolute;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    width: 45px;
+
+    height: 45px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: rgba(82, 40, 19, 0.75);
+
+    color: white;
+
+    font-size: 25px;
+
+    cursor: pointer;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease;
+
+    z-index: 5;
+
+}
+
+
+.slide-arrow:hover {
+
+    background: rgba(82, 40, 19, 0.95);
+
+}
+
+
+.slide-arrow.previous {
+
+    left: 18px;
+
+}
+
+
+.slide-arrow.next {
+
+    right: 18px;
+
+}
+
+
+/* =========================
+   QUEEN INFORMATION
+========================= */
+
+.queen-information {
+
+    max-width: 550px;
+
+}
+
+
+.queen-label {
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    color: #c99a35;
+
+    margin-bottom: 10px;
+
+}
+
+
+.queen-information h2 {
+
+    font-family: Georgia, serif;
+
+    font-size: 48px;
+
+    color: #522813;
+
+    margin-bottom: 25px;
+
+}
+
+
+.queen-description {
+
+    font-size: 18px;
+
+    line-height: 1.8;
+
+    color: #5f3323;
+
+    margin-bottom: 30px;
+
+}
+
+
+/* =========================
+   QUEEN DETAILS
+========================= */
+
+.queen-details {
+
+    border-top: 1px solid rgba(82, 40, 19, 0.25);
+
+    padding-top: 20px;
+
+}
+
+
+.queen-details p {
+
+    font-size: 16px;
+
+    line-height: 1.7;
+
+    margin-bottom: 10px;
+
+    color: #5f3323;
+
+}
+
+
+.queen-details strong {
+
+    color: #522813;
+
+}
+
+
+/* =========================
+   FOOTER BUTTON
+========================= */
+
+.queens-footer {
+
+    text-align: center;
+
+    padding: 70px 20px;
+
+    background: #f4c861;
+
+}
+
+
+.cat-button {
+
+    display: inline-block;
+
+    padding: 13px 28px;
+
+    background: #c99a35;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 25px;
+
+    font-weight: bold;
+
+    transition:
+        background 0.3s ease,
+        transform 0.2s ease;
+
+}
+
+
+.cat-button:hover {
+
+    background: #a97922;
+
+    transform: translateY(-2px);
+
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+    .site-logo {
+
+        width: 180px;
+
+        height: 180px;
+
+    }
+
+
+    .queen-section {
+
+        grid-template-columns: 1fr;
+
+        gap: 40px;
+
+        padding: 70px 7%;
+
+    }
+
+
+    /*
+       On smaller screens we stop
+       alternating columns and simply
+       show the photo first.
+    */
+
+    .queen-section.reverse {
+
+        padding-left: 7%;
+
+        padding-right: 7%;
+
+    }
+
+
+    .queen-section.reverse .queen-images {
+
+        grid-column: 1;
+
+        grid-row: 1;
+
+    }
+
+
+    .queen-section.reverse .queen-information {
+
+        grid-column: 1;
+
+        grid-row: 2;
+
+    }
+
+
+    .queen-information {
+
+        max-width: none;
+
+    }
+
+
+    .queen-slideshow {
+
+        height: 500px;
+
+    }
+
+}
+
+
+/* =========================
+   PHONE
+========================= */
+
+@media (max-width: 650px) {
+
+    .site-header {
+
+        height: 75px;
+
+        padding-right: 5%;
+
+    }
+
+
+    .site-logo {
+
+        width: 130px;
+
+        height: 130px;
+
+        top: 15px;
+
+        left: 2%;
+
+    }
+
+
+    .site-header nav {
+
+        gap: 15px;
+
+    }
+
+
+    .site-header nav a {
+
+        font-size: 14px;
+
+    }
+
+
+    .queens-intro {
+
+        padding: 60px 20px;
+
+    }
+
+
+    .queens-intro h1 {
+
+        font-size: 38px;
+
+    }
+
+
+    .queens-intro p {
+
+        font-size: 16px;
+
+    }
+
+
+    .queen-section {
+
+        padding: 60px 7%;
+
+        gap: 35px;
+
+    }
+
+
+    .queen-section.reverse {
+
+        padding-left: 7%;
+
+        padding-right: 7%;
+
+    }
+
+
+    .queen-slideshow {
+
+        height: 420px;
+
+        border-radius: 15px;
+
+    }
+
+
+    .slide-arrow {
+
+        width: 40px;
+
+        height: 40px;
+
+        font-size: 22px;
+
+    }
+
+
+    .slide-arrow.previous {
+
+        left: 12px;
+
+    }
+
+
+    .slide-arrow.next {
+
+        right: 12px;
+
+    }
+
+
+    .queen-information h2 {
+
+        font-size: 38px;
+
+    }
+
+
+    .queen-description {
+
+        font-size: 16px;
+
+    }
+
+}
+
+.moreinfo {
+
+    background: #fff8e8;
+
+    padding: 50px;
+
+    text-align: center;
+}
+
+
+.moreinfo a {
+
+    color: #522813;
+
+    font-weight: bold;
+
+    text-decoration: none;
+
+    margin: 0 15px;
+}
+
+
+.moreinfo a:hover {
+
+    color: #c59d5f;
+}
+
+
+.moreinfo p {
+
+    margin-top: 25px;
+
+    font-size: 14px;
+
+    color: #6d6258;
+}

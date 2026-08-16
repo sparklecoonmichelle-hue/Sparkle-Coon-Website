@@ -1,0 +1,942 @@
+
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   BODY
+========================= */
+
+body {
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: #fff8e8;
+
+    color: #5f3323;
+
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.site-header {
+
+    height: 90px;
+
+    background: #fff8e8;
+
+    display: flex;
+
+    justify-content: flex-end;
+
+    align-items: center;
+
+    padding: 0 7%;
+
+    position: relative;
+
+    box-shadow:
+        0 2px 10px rgba(0, 0, 0, 0.10);
+
+    z-index: 10;
+
+}
+
+
+.site-logo {
+
+    position: absolute;
+
+    left: 2%;
+
+    top: 20px;
+
+    width: 225px;
+
+    height: 225px;
+
+    object-fit: contain;
+
+    z-index: 20;
+
+}
+
+
+.site-header nav {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 35px;
+
+}
+
+
+.site-header nav a {
+
+    text-decoration: none;
+
+    color: #522813;
+
+    font-size: 17px;
+
+    font-weight: bold;
+
+}
+
+
+.site-header nav a:hover {
+
+    color: #c59d5f;
+
+}
+
+
+/* =========================
+   GENERAL LABEL
+========================= */
+
+.breed-label {
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    color: #c99a35;
+
+    margin-bottom: 12px;
+
+}
+
+
+/* =========================
+   PAGE INTRO
+========================= */
+
+.breed-intro {
+
+    background: #522813;
+
+    text-align: center;
+
+    padding: 90px 20px 80px;
+
+}
+
+
+.breed-intro h1 {
+
+    font-family: Georgia, serif;
+
+    font-size: 50px;
+
+    color: #f4c861;
+
+    margin-bottom: 20px;
+
+}
+
+
+.breed-intro p:last-child {
+
+    max-width: 750px;
+
+    margin: 0 auto;
+
+    font-size: 18px;
+
+    line-height: 1.8;
+
+    color: #e6ca8a;
+
+}
+
+
+/* =========================
+   FEATURE SECTION
+========================= */
+
+.breed-feature {
+
+    width: 100%;
+
+    max-width: 1400px;
+
+    margin: 0 auto;
+
+    padding: 100px 6%;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 80px;
+
+    align-items: center;
+
+}
+
+
+.breed-feature-image {
+
+    width: 100%;
+
+    overflow: hidden;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 8px 25px rgba(70, 45, 25, 0.18);
+
+}
+
+
+.breed-feature-image img {
+
+    width: 100%;
+
+    display: block;
+
+    height: auto;
+
+}
+
+
+.breed-feature-text {
+
+    max-width: 600px;
+
+}
+
+
+.breed-feature-text h2 {
+
+    font-family: Georgia, serif;
+
+    font-size: 44px;
+
+    color: #522813;
+
+    margin-bottom: 25px;
+
+}
+
+
+.breed-feature-text p:not(.breed-label) {
+
+    font-size: 17px;
+
+    line-height: 1.8;
+
+    color: #5f3323;
+
+    margin-bottom: 22px;
+
+}
+
+
+
+
+/* =========================
+   PERSONALITY
+========================= */
+
+.personality-section {
+
+    padding: 100px 7%;
+
+    background:
+        linear-gradient(
+            to right,
+            #fff8e8,
+            #dfe0bd
+        );
+
+}
+
+
+.personality-text {
+
+    max-width: 850px;
+
+    margin: 0 auto;
+
+}
+
+
+.personality-text h2 {
+
+    font-family: Georgia, serif;
+
+    font-size: 44px;
+
+    color: #522813;
+
+    margin-bottom: 30px;
+
+}
+
+
+.personality-text p:not(.breed-label) {
+
+    font-size: 17px;
+
+    line-height: 1.8;
+
+    color: #5f3323;
+
+    margin-bottom: 22px;
+
+}
+
+
+/* =========================
+   GROOMING
+========================= */
+
+.grooming-section {
+
+    padding: 100px 7%;
+
+    text-align: center;
+
+    background: #fff8e8;
+
+}
+
+
+.grooming-section h2 {
+
+    font-family: Georgia, serif;
+
+    font-size: 44px;
+
+    color: #522813;
+
+    margin-bottom: 35px;
+
+}
+
+
+.grooming-content {
+
+    max-width: 850px;
+
+    margin: 0 auto;
+
+}
+
+
+.grooming-content p {
+
+    font-size: 17px;
+
+    line-height: 1.8;
+
+    color: #5f3323;
+
+    margin-bottom: 22px;
+
+}
+
+
+/* =========================
+   COMMON MISCONCEPTIONS
+========================= */
+
+.misconceptions-section {
+
+    padding: 100px 7%;
+
+    background: #522813;
+
+    text-align: center;
+
+}
+
+
+.misconceptions-section h2 {
+
+    font-family: Georgia, serif;
+
+    font-size: 44px;
+
+    color: #f4c861;
+
+    margin-bottom: 45px;
+
+}
+
+
+.misconceptions {
+
+    max-width: 1000px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 25px;
+
+}
+
+
+.misconception {
+
+    padding: 30px;
+
+    border: 1px solid rgba(230, 202, 138, 0.35);
+
+    border-radius: 15px;
+
+    text-align: left;
+
+}
+
+
+.misconception:last-child {
+
+    grid-column: 1 / -1;
+
+    max-width: 500px;
+
+    width: 100%;
+
+    margin: 0 auto;
+
+}
+
+
+.misconception h3 {
+
+    font-family: Georgia, serif;
+
+    font-size: 22px;
+
+    color: #f4c861;
+
+    margin-bottom: 12px;
+
+}
+
+
+.misconception p {
+
+    font-size: 16px;
+
+    line-height: 1.7;
+
+    color: #e6ca8a;
+
+}
+
+
+/* =========================
+   SIZE & MATURITY
+========================= */
+
+.size-section {
+
+    padding: 100px 7%;
+
+    background:
+        linear-gradient(
+            to bottom,
+            #fff8e8,
+            #dfe0bd
+        );
+
+}
+
+
+.size-content {
+
+    max-width: 850px;
+
+    margin: 0 auto;
+
+    text-align: center;
+
+}
+
+
+.size-content h2 {
+
+    font-family: Georgia, serif;
+
+    font-size: 44px;
+
+    color: #522813;
+
+    margin-bottom: 30px;
+
+}
+
+
+.size-content p:not(.breed-label) {
+
+    font-size: 17px;
+
+    line-height: 1.8;
+
+    color: #5f3323;
+
+    margin-bottom: 22px;
+
+}
+
+
+/* =========================
+   COLOURS
+========================= */
+
+.colours-section {
+
+    padding: 100px 7%;
+
+    text-align: center;
+
+    background: #fff8e8;
+
+}
+
+
+.colours-section h2 {
+
+    font-family: Georgia, serif;
+
+    font-size: 44px;
+
+    color: #522813;
+
+    margin-bottom: 20px;
+
+}
+
+
+.colours-intro {
+
+    max-width: 700px;
+
+    margin: 0 auto 40px;
+
+    font-size: 17px;
+
+    line-height: 1.7;
+
+    color: #5f3323;
+
+}
+
+
+.colour-list {
+
+    max-width: 1000px;
+
+    margin: 0 auto;
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    gap: 15px;
+
+}
+
+
+.colour-list span {
+
+    padding: 13px 22px;
+
+    background: #e9e6c9;
+
+    border-radius: 25px;
+
+    color: #522813;
+
+    font-weight: bold;
+
+}
+
+
+/* =========================
+   COLOURS NOT RECOGNISED
+========================= */
+
+.not-recognised-section {
+
+    padding: 100px 7%;
+
+    background:
+        linear-gradient(
+            to right,
+            #dfe0bd,
+            #d8c47d
+        );
+
+    text-align: center;
+
+}
+
+
+.not-recognised-section h2 {
+
+    max-width: 850px;
+
+    margin: 0 auto 30px;
+
+    font-family: Georgia, serif;
+
+    font-size: 42px;
+
+    color: #522813;
+
+}
+
+
+.not-recognised-content {
+
+    max-width: 800px;
+
+    margin: 0 auto;
+
+}
+
+
+.not-recognised-content p {
+
+    font-size: 17px;
+
+    line-height: 1.8;
+
+    color: #5f3323;
+
+    margin-bottom: 20px;
+
+}
+
+
+.not-recognised-list {
+
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 15px;
+
+    margin-top: 30px;
+
+}
+
+
+.not-recognised-list span {
+
+    background: #522813;
+
+    color: #f4c861;
+
+    padding: 13px 25px;
+
+    border-radius: 25px;
+
+    font-weight: bold;
+
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.breed-footer {
+
+    text-align: center;
+
+    padding: 70px 20px;
+
+    background: #f4c861;
+
+}
+
+
+.cat-button {
+
+    display: inline-block;
+
+    padding: 13px 28px;
+
+    background: #c99a35;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 25px;
+
+    font-weight: bold;
+
+    transition:
+        background 0.3s ease,
+        transform 0.2s ease;
+
+}
+
+
+.cat-button:hover {
+
+    background: #a97922;
+
+    transform: translateY(-2px);
+
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+    .site-logo {
+
+        width: 180px;
+
+        height: 180px;
+
+    }
+
+
+    .breed-feature {
+
+        grid-template-columns: 1fr;
+
+        gap: 45px;
+
+        padding: 75px 7%;
+
+    }
+
+
+    .breed-feature-text {
+
+        max-width: none;
+
+    }
+
+
+    .characteristics-grid {
+
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+
+    .misconceptions {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .misconception:last-child {
+
+        grid-column: auto;
+
+        max-width: none;
+
+    }
+
+}
+
+
+/* =========================
+   PHONE
+========================= */
+
+@media (max-width: 650px) {
+
+    .site-header {
+
+        height: 75px;
+
+        padding-right: 5%;
+
+    }
+
+
+    .site-logo {
+
+        width: 130px;
+
+        height: 130px;
+
+        top: 15px;
+
+        left: 2%;
+
+    }
+
+
+    .site-header nav {
+
+        gap: 15px;
+
+    }
+
+
+    .site-header nav a {
+
+        font-size: 14px;
+
+    }
+
+
+    .breed-intro {
+
+        padding: 65px 20px;
+
+    }
+
+
+    .breed-intro h1 {
+
+        font-size: 38px;
+
+    }
+
+
+    .breed-intro p:last-child {
+
+        font-size: 16px;
+
+    }
+
+
+    .breed-feature {
+
+        padding: 60px 7%;
+
+    }
+
+
+    .breed-feature-text h2 {
+
+        font-size: 36px;
+
+    }
+
+
+    .breed-section,
+    .personality-section,
+    .grooming-section,
+    .misconceptions-section,
+    .size-section,
+    .colours-section,
+    .not-recognised-section {
+
+        padding: 65px 7%;
+
+    }
+
+
+    .breed-section h2,
+    .personality-text h2,
+    .grooming-section h2,
+    .misconceptions-section h2,
+    .size-content h2,
+    .colours-section h2 {
+
+        font-size: 35px;
+
+    }
+
+
+    .not-recognised-section h2 {
+
+        font-size: 34px;
+
+    }
+
+
+    .characteristics-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .breed-feature-text p:not(.breed-label),
+    .personality-text p:not(.breed-label),
+    .grooming-content p,
+    .size-content p:not(.breed-label),
+    .colours-intro,
+    .not-recognised-content p {
+
+        font-size: 16px;
+
+    }
+
+
+    .misconception p {
+
+        font-size: 15px;
+
+    }
+
+}
+
+.moreinfo {
+
+    background: #fff8e8;
+
+    padding: 50px;
+
+    text-align: center;
+}
+
+
+.moreinfo a {
+
+    color: #522813;
+
+    font-weight: bold;
+
+    text-decoration: none;
+
+    margin: 0 15px;
+}
+
+
+.moreinfo a:hover {
+
+    color: #c59d5f;
+}
+
+
+.moreinfo p {
+
+    margin-top: 25px;
+
+    font-size: 14px;
+
+    color: #6d6258;
+}
