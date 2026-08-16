@@ -1193,7 +1193,6 @@ nav a:hover{
     .cat-cards {
         grid-template-columns: 1fr;
         gap: 25px;
-        background: #fff8e8
     }
 
     .cat-card:last-child {
