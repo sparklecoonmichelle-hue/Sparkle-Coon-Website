@@ -1,4 +1,7 @@
 /* Reset */
+html {
+    color-scheme: light;
+}
 
 *{
     margin:0;
