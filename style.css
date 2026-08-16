@@ -1089,7 +1089,8 @@ nav a:hover{
 
     .hero-image {
         width: 100%;
-        height: auto;
+        height: 500px;
+        object-fit: cover;
         display: block;
     }
 
