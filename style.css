@@ -1089,8 +1089,8 @@ nav a:hover{
 
     .hero-image {
         width: 100%;
-        height: auto;
-        display: block;
+        height: 650px;
+        display: cover;
     }
 
     .hero-overlay {
