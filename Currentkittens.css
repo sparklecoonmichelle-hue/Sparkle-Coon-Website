@@ -170,3 +170,14 @@ header{
 .pagetitle h1{
     color:#ffcb3b
 }
+
+.publickitten{
+    background: #946e50;
+
+    padding: 50px;
+}
+.publickitten-image{
+    width: 25%;
+    height: auto;
+    display: block;
+}
