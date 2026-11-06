@@ -119,3 +119,12 @@ header{
 .site-header nav a:hover {
     color: #c59d5f;
 }
+
+.moreinfo {
+        padding: 40px 20px;
+    }
+
+.moreinfo a {
+        display: inline-block;
+        margin: 8px 10px;
+    }
