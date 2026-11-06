@@ -121,10 +121,38 @@ header{
 }
 
 .moreinfo {
-        padding: 40px 20px;
-    }
+
+    background: #fff8e8;
+
+    padding: 50px;
+
+    text-align: center;
+}
+
 
 .moreinfo a {
-        display: inline-block;
-        margin: 8px 10px;
-    }
+
+    color: #522813;
+
+    font-weight: bold;
+
+    text-decoration: none;
+
+    margin: 0 15px;
+}
+
+
+.moreinfo a:hover {
+
+    color: #c59d5f;
+}
+
+
+.moreinfo p {
+
+    margin-top: 25px;
+
+    font-size: 14px;
+
+    color: #6d6258;
+}
